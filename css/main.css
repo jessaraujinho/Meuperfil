@@ -33,6 +33,7 @@ body{
 }
 .redes-sociais{
     margin-top: 10px;
+    margin-bottom: 50px;
     display: flex; /*organizar itens na mesma linha*/ 
     justify-content: center; 
     align-items: center; /* alinhamento de itens*/
@@ -98,5 +99,99 @@ body{
    } 
    .email:hover i{
     background: #eb76a7;
-
    }
+
+   /* FIM CSS REDES SOCIAIS*/
+
+
+   /*Css TEXTO*/
+   .texto{
+    display: flex;
+    justify-content: center; /*Centralizar Texto*/
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    width: 500px;
+    height: 150px;
+    padding: 25px 35px ;
+    border-radius:50px ;
+    color: #000000;
+    background: #cadbee;
+    overflow: hidden;
+    box-shadow: 0 3px rgba(0,0, 0, 0.5); /*RGB-A = Alpha para transparencia*/
+    cursor: pointer;
+   }
+   .titulo{
+    display: flex;
+    justify-content: center; /* centralizar Texto*/
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    color:#2f11b3;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: justify;
+   }
+
+   .linguegem{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+   }
+   .linguegem img{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 170px;
+    border-radius: 200px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px rgb(98, 98, 98)
+}
+.projetos{
+margin: auto;
+margin-top: 40px;
+flex-direction: column;
+}
+.projetos a{
+    text-decoration: none; /* é usada para definir a formatação de underline*/
+    color: #000000f5;
+}
+.Item{
+    margin: auto;
+    display: flex; /* nulo */
+    align-items: center;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    color: #301168;
+    border:4px solid #000000;
+    border-radius:30px;
+    width: 570px;
+    height: 60px;
+    margin-bottom:7px;
+    background: #348857;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#video{
+    padding: 10px;
+    margin: auto;
+    display: none;
+}
+#video.active{
+    display: block;
+}
+.rodape{
+    color: #000000;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
