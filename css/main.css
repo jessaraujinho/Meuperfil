@@ -13,15 +13,18 @@ body{
     background: linear-gradient(#75ebdb, #faf9f9, #348857);
     background-repeat: no-repeat;
 }
+
 .imagem{
     display: flex;
     justify-content: center;
 }
+
 .imagem img{
     width: 170px;
     border-radius: 200px;
     margin-top: 30px;
 }
+
 .name{
     margin-top: 18px;
     display: flex;
@@ -29,8 +32,9 @@ body{
     font-size: 32px;
     font-weight: 600;
     color: #000000;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Times New Roman', Times, serif;
 }
+
 .redes-sociais{
     margin-top: 10px;
     margin-bottom: 50px;
@@ -38,7 +42,8 @@ body{
     justify-content: center; 
     align-items: center; /* alinhamento de itens*/
 }
-.icon, .email {
+
+.icon, #email {
     display: inline-block; 
     height: 35px;
     width: 35px;
@@ -49,7 +54,8 @@ body{
     margin: 3px;
     overflow: hidden; 
 }
-.icon i, .email i{
+
+.icon i, #email i{
     display: inline-block;
     width:35px;
     height: 35px;
@@ -61,18 +67,20 @@ body{
     color:rgb(16, 121, 63);
     cursor: pointer;
 }
+
    .icon span a{
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     float: right;
     margin-right: 23px;
     font-weight:100 ;
     color: #308ff4;
-    line-height: 35px;
+    line-height: 35px; 
     font-size: 17px;
    }
+
    .name-icon{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     margin-right: 40px;
     float: right;
     color: #75ebdb;
@@ -80,6 +88,7 @@ body{
     line-height: 35px;
     font-size: 17px;
    }
+
    .icon:hover{
     width: 125px;
     background-color:rgb(237, 237, 237) ;
@@ -100,12 +109,12 @@ body{
    .email:hover i{
     background: #eb76a7;
    }
-
    /* FIM CSS REDES SOCIAIS*/
 
 
    /*Css TEXTO*/
    .texto{
+    position:relative;
     display: flex;
     justify-content: center; /*Centralizar Texto*/
     align-items: center;
@@ -125,19 +134,16 @@ body{
     box-shadow: 0 3px rgba(0,0, 0, 0.5); /*RGB-A = Alpha para transparencia*/
     cursor: pointer;
    }
-   .titulo{
+   #sobre-mim{
+    position: absolute;
+    top: 10px;
     display: flex;
-    justify-content: center; /* centralizar Texto*/
-    align-items: center;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    color:#2f11b3;
-    font-family:'Times New Roman', Times, serif;
+    color:#000000;
     font-size: 25px;
-    text-align: justify;
-   }
-
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 35px;
+   } 
    .linguegem{
     display: flex;
     justify-content: center;
@@ -160,6 +166,13 @@ flex-direction: column;
 .projetos a{
     text-decoration: none; /* é usada para definir a formatação de underline*/
     color: #000000f5;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    color: #348857;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .Item{
     margin: auto;
@@ -195,3 +208,80 @@ flex-direction: column;
     padding: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/*Fim das configurações pata desktp*/
+
+/*Dispositivos Moboles*/
+@media(max-widht:700px) {
+    .imagem img{
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 30px;
+    }
+    .texto{
+        width: 350px;
+        height: 250px;
+    }
+    .linguegem{
+        width:165px ;
+    }
+    .Item{
+        width: 350px; 
+    }
+    #video{
+        width: 330px;
+    }
+}
+
+@media (max-width:500px){
+    .imagem img{
+        width: 120px;
+    }
+    .texto{
+        padding: 15px;
+        width: 244px;
+        height: 250px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .subtitulo{
+        font-size: 22px;
+        margin-top: 22px;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #video{
+        width: 270px;
+        height: 160px;
+    }
+    .Item{
+        width: 265px;
+        height: 40px;
+    }
+    .icon, #email{
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+    }
+    .icon i, #email i{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 30px;
+    }
+    .icon span{
+        margin-right: 43px;
+        line-height: 20px;
+        font-size: 12px ;
+    }
+    .rodape{
+        font-size: 20px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+}/*Fim resolução 500px*/
